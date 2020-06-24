@@ -1,0 +1,22 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "(menu)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilie65/menu.git"
+  },
+  "keywords": [
+    "Mesloulou1980."
+  ],
+  "author": "celine.kerdoud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilie65/menu/issues"
+  },
+  "homepage": "https://github.com/lilie65/menu#readme"
+}

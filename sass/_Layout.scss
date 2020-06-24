@@ -1,0 +1,22 @@
+header{
+  background-color:$background-vert;
+  padding:30px;
+  h1 {
+    color:$text-oh;
+    font-size: 60px;
+    text-align:center;
+  }
+}
+footer {
+  background-color: $background-vert;
+  padding: 30px;
+
+  .ranger {
+    display: flex;
+    justify-content: space-between;
+
+    .couleur {
+      color: $text-oh;
+    }
+  }
+}

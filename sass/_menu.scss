@@ -1,0 +1,50 @@
+/*pages annexe*/
+
+.presentation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include enchante;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    h3, h2 {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .note {
+
+        position: absolute;
+        bottom: 61rem;
+        left: 27rem;
+    }
+
+    .titre-carte {
+        position: absolute;
+        bottom: 68rem;
+        left: 26rem;
+    }
+
+
+    .choix-menu {
+        border: groove 50px transparent;
+        box-shadow: 2em 2em 7em $border-menu;
+        padding: 60px;
+        margin: 8rem;
+        width: 50rem;
+        height: 60rem;
+        background-color: $couleur-page1;
+
+        .carte {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            inset-inline-start: unset;
+        }
+    }
+}

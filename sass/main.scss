@@ -1,0 +1,96 @@
+@import "variables";
+@import "mixins";
+@import "Layout";
+@import "menu";
+/*menu Principal*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  @include body;
+}
+
+.menu-principal,.carte-menu {
+  @include form-page;
+  @include flex-column;
+  .alignement-menu {
+    align-items: center;
+    justify-content: space-around;
+    @include order;
+  }
+
+    a {
+      text-decoration: none;
+      .menu1 {
+        background-color: $couleur-page1;
+      }
+      .menu2 {
+        background-color: $couleur-page2;
+      }
+      .menu3 {
+        background-color: $couleur-page3;
+    }
+      .menu4 {
+        background-color: $couleur-page4;
+      }
+  }
+
+  .general {
+    border: groove 0px;
+    box-shadow: 0rem 0rem 1rem $border-menu;
+    width: 19rem;
+    height: 25rem;
+    margin: 30px;
+    padding: 8rem 40px;
+    .police {
+      font-size: 25px;
+      text-align: center;
+      &.police1 {
+        @include enchante;
+      }
+      &.police2 {
+        @include papille;
+      }
+      &.police3 {
+        @include francaise;
+      }
+      &.police4 {
+        @include gout;
+      }
+    }
+  }
+    .fas.fa-music {
+      font-size: 40px;
+      margin-left: 70px;
+    }
+
+    .menu {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 25px;
+    }
+
+
+  .prochainement {
+    border: solid 2px $background-vert;
+    border-radius: 10px;
+    width: 15rem;
+    background-color: $background-vert;
+    margin: 30px;
+    margin-left: 25rem;
+
+    .centrer {
+      padding: 10px 30px;
+      text-align: center;
+      color: $text-oh;
+    }
+  }
+  }
+
+
+
+
+
+
