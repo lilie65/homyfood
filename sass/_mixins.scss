@@ -1,6 +1,6 @@
 @mixin body{
   font-family: sans-serif;
-  font-size: 13px;
+  font-size: 1rem;
   line-height: 20px;
   color: black;
   background-color: $page;
@@ -14,21 +14,7 @@
   margin: 0 auto;
   background-color: white;
 }
-@mixin enchante{
-  font-family: 'Zhi Mang Xing','Sriracha', cursive;
-}
-@mixin francaise{
-  font-family: 'Dancing Script', cursive,sans-serif;
-}
-@mixin papille{
-  font-family:'Harlow Solid',sans-serif;
-}
-@mixin gout{
-  font-family: 'Kaushan Script', cursive,sans-serif;
-}
-@mixin letter{
-  font-family: 'Old Standard TT', serif;
-}
+
 @mixin flex-column{
   display: flex;
   flex-direction: column;

@@ -1,84 +1,107 @@
 header {
   background-color: #569C87;
-  padding: 30px;
-}
-header h1 {
-  color: #F8C847;
-  font-size: 60px;
-  text-align: center;
-}
+  padding: 30px; }
+  header h1 {
+    color: #F8C847;
+    font-size: 60px;
+    text-align: center; }
 
 footer {
   background-color: #569C87;
-  padding: 30px;
-}
-footer .ranger {
-  display: flex;
-  justify-content: space-between;
-}
-footer .ranger .couleur {
-  color: #F8C847;
-}
+  padding: 30px; }
+  footer .ranger {
+    display: flex;
+    justify-content: space-between; }
+    footer .ranger .couleur {
+      color: #F8C847;
+      font-size: 1rem; }
 
 /*pages annexe*/
 .presentation {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: "Devonshire", cursive;
-}
-.presentation h1 {
-  text-align: center;
-  margin: 2rem;
-  font-size: 2em;
-}
-.presentation .titre-menu {
-  text-align: center;
-  margin: 5rem;
-}
-.presentation .note {
-  position: absolute;
-  bottom: 63rem;
-  left: 27rem;
-}
-.presentation .titre-carte {
-  position: absolute;
-  bottom: 68rem;
-  left: 26rem;
-}
-.presentation .choix-menu {
-  border: groove 0px;
-  box-shadow: 0rem 0rem 1rem #919393;
-  padding: 60px;
-  margin: 8rem;
-  width: 50rem;
-  height: 60rem;
-  background-color: #FCDFDA;
-}
-.presentation .choix-menu .carte {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  inset-inline-start: unset;
-}
-.presentation .fin-page {
-  display: flex;
-  margin: 2rem;
-}
+  font-size: 1.3rem;
+  white-space: pre-line; }
+  .presentation .choix-menu {
+    border: groove 0px;
+    box-shadow: 0rem 0rem 1rem #919393;
+    padding: 60px;
+    margin: 8rem;
+    width: 50rem;
+    height: 60rem; }
+    .presentation .choix-menu.choix1 {
+      background-color: #FCDFDA;
+      font-family: "Devonshire", cursive; }
+    .presentation .choix-menu.choix2 {
+      background-color: #FEF5FD;
+      font-family: "Croissant One", cursive;
+      font-size: 1.1rem; }
+    .presentation .choix-menu.choix3 {
+      background-color: #F9F9F9;
+      font-family: "Alex Brush", cursive; }
+    .presentation .choix-menu.choix4 {
+      background-color: #FDFFFD;
+      font-family: "Kaushan Script", cursive; }
+    .presentation .choix-menu .carte {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      inset-inline-start: unset; }
+  .presentation .titre1 {
+    position: absolute;
+    text-align: center;
+    top: 5rem;
+    width: 65rem;
+    font-size: 2rem; }
+  .presentation .titre2 {
+    text-align: center;
+    font-size: 2rem; }
+    .presentation .titre2.page2 {
+      margin: 1rem;
+      font-size: 1.7rem; }
+    .presentation .titre2.page3 {
+      font-size: 3rem;
+      margin: 2rem; }
+    .presentation .titre2.page4 {
+      font-size: 5rem;
+      margin: 4rem; }
+  .presentation h3, .presentation h2 {
+    text-align: center; }
+  .presentation h3, .presentation h3::before, .presentation h3::after {
+    display: inline-block;
+    vertical-align: middle; }
+  .presentation h3::before, .presentation h3::after {
+    height: 0.2rem;
+    width: 13rem;
+    background: orange;
+    content: ""; }
+  .presentation .note {
+    position: absolute;
+    bottom: 62rem;
+    left: 27rem; }
+  .presentation .fin-page {
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0 20rem;
+    width: 60rem; }
+    .presentation .fin-page .note2 {
+      position: absolute;
+      bottom: 12.5rem;
+      left: 24rem; }
+
 /*menu Principal*/
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   font-family: sans-serif;
-  font-size: 13px;
+  font-size: 1rem;
   line-height: 20px;
   color: black;
-  background-color: grey;
-}
+  background-color: grey; }
 
 .menu-principal, .carte-menu {
   display: flex;
@@ -89,74 +112,64 @@ body {
   margin: 0 auto;
   background-color: white;
   display: flex;
-  flex-direction: column;
-}
-.menu-principal .alignement-menu, .carte-menu .alignement-menu {
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-  flex-wrap: wrap;
-}
-.menu-principal a, .carte-menu a {
-  text-decoration: none;
-}
-.menu-principal a .menu1, .carte-menu a .menu1 {
-  background-color: #FCDFDA;
-}
-.menu-principal a .menu2, .carte-menu a .menu2 {
-  background-color: #FEF5FD;
-}
-.menu-principal a .menu3, .carte-menu a .menu3 {
-  background-color: #F9F9F9;
-}
-.menu-principal a .menu4, .carte-menu a .menu4 {
-  background-color: #FDFFFD;
-}
-.menu-principal .general, .carte-menu .general {
-  border: groove 0px;
-  box-shadow: 0rem 0rem 1rem #919393;
-  width: 19rem;
-  height: 25rem;
-  margin: 30px;
-  padding: 8rem 40px;
-}
-.menu-principal .general .police, .carte-menu .general .police {
-  font-size: 25px;
-  text-align: center;
-}
-.menu-principal .general .police.police1, .carte-menu .general .police.police1 {
-  font-family: "Zhi Mang Xing", "Sriracha", cursive;
-}
-.menu-principal .general .police.police2, .carte-menu .general .police.police2 {
-  font-family: "Harlow Solid", sans-serif;
-}
-.menu-principal .general .police.police3, .carte-menu .general .police.police3 {
-  font-family: "Dancing Script", cursive, sans-serif;
-}
-.menu-principal .general .police.police4, .carte-menu .general .police.police4 {
-  font-family: "Kaushan Script", cursive, sans-serif;
-}
-.menu-principal .fas.fa-music, .carte-menu .fas.fa-music {
-  font-size: 40px;
-  margin-left: 70px;
-}
-.menu-principal .menu, .carte-menu .menu {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 25px;
-}
-.menu-principal .prochainement, .carte-menu .prochainement {
-  border: solid 2px #569C87;
-  border-radius: 10px;
-  width: 15rem;
-  background-color: #569C87;
-  margin: 30px;
-  margin-left: 25rem;
-}
-.menu-principal .prochainement .centrer, .carte-menu .prochainement .centrer {
-  padding: 10px 30px;
-  text-align: center;
-  color: #F8C847;
-}
+  flex-direction: column; }
+  .menu-principal .alignement-menu, .carte-menu .alignement-menu {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap; }
+  .menu-principal a, .carte-menu a {
+    text-decoration: none; }
+    .menu-principal a .menu1, .carte-menu a .menu1 {
+      background-color: #FCDFDA; }
+    .menu-principal a .menu2, .carte-menu a .menu2 {
+      background-color: #FEF5FD; }
+    .menu-principal a .menu3, .carte-menu a .menu3 {
+      background-color: #F9F9F9; }
+    .menu-principal a .menu4, .carte-menu a .menu4 {
+      background-color: #FDFFFD; }
+  .menu-principal .general, .carte-menu .general {
+    border: groove 0px;
+    box-shadow: 0rem 0rem 1rem #919393;
+    width: 19rem;
+    height: 25rem;
+    margin: 30px;
+    padding: 8rem 40px; }
+    .menu-principal .general .police, .carte-menu .general .police {
+      font-size: 1.9rem;
+      text-align: center;
+      width: 15rem; }
+      .menu-principal .general .police.police1, .carte-menu .general .police.police1 {
+        font-family: "Devonshire", cursive; }
+      .menu-principal .general .police.police2, .carte-menu .general .police.police2 {
+        font-family: "Croissant One", cursive;
+        font-size: 1.3rem; }
+      .menu-principal .general .police.police3, .carte-menu .general .police.police3 {
+        font-family: "Alex Brush", cursive; }
+      .menu-principal .general .police.police4, .carte-menu .general .police.police4 {
+        font-family: "Kaushan Script", cursive; }
+  .menu-principal .fas.fa-music, .carte-menu .fas.fa-music {
+    font-size: 40px;
+    margin-left: 70px; }
+  .menu-principal .menu, .carte-menu .menu {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem; }
+  .menu-principal .font1, .carte-menu .font1 {
+    font-family: "Kalam", cursive; }
+  .menu-principal .font2, .carte-menu .font2 {
+    font-family: "sans serif";
+    font-size: 2.6rem; }
+  .menu-principal .prochainement, .carte-menu .prochainement {
+    border: solid 2px #569C87;
+    border-radius: 10px;
+    width: 17rem;
+    background-color: #569C87;
+    margin: 30px;
+    margin-left: 23rem; }
+    .menu-principal .prochainement .centrer, .carte-menu .prochainement .centrer {
+      padding: 10px 30px;
+      text-align: center;
+      color: #F8C847; }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,13 +10,12 @@ header{
 footer {
   background-color: $background-vert;
   padding: 30px;
-
-  .ranger {
-    display: flex;
+  .ranger{
+    display:flex;
     justify-content: space-between;
-
     .couleur {
       color: $text-oh;
+      font-size:1rem;
     }
   }
 }
