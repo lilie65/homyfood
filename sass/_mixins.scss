@@ -1,0 +1,32 @@
+@mixin body{
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 20px;
+  color: black;
+  background-color: $page;
+}
+@mixin form-page{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1024px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+@mixin flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin order{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin center{
+  text-align: center;
+}
+
+

@@ -1,0 +1,99 @@
+/*pages annexe*/
+
+.presentation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size:1.3rem;
+    white-space: pre-line;
+    
+    .choix-menu {
+        border: groove 0px;
+    box-shadow: 0rem 0rem 1rem $border-menu;
+        padding: 60px;
+        margin: 8rem;
+        width: 50rem;
+        height: 60rem;
+        &.choix1{
+        background-color: $couleur-page1;
+        font-family: $enchante;
+        }
+        &.choix2{
+        background-color: $couleur-page2;
+        font-family:$francaise;
+        font-size:1.1rem;
+        }
+        &.choix3{
+            background-color: $couleur-page3;
+            font-family:$papille;
+        }
+        &.choix4{
+            background-color: $couleur-page4;;
+            font-family:$gout;
+        }
+
+        .carte {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            inset-inline-start: unset;
+        }
+    }
+.titre1{
+    position:absolute;
+    text-align: center;
+    top:5rem;
+    width:65rem;
+    font-size:2rem;
+}
+
+    .titre2{
+        text-align: center;
+        font-size: 2rem;
+        &.page2{
+           margin:1rem;
+            font-size:1.7rem;
+        }
+        &.page3{
+            font-size: 3rem;
+            margin:2rem;
+        }
+        &.page4{
+            font-size: 5rem;
+            margin:4rem;
+        }
+    }
+    h3, h2 {
+        text-align: center;
+    }
+    h3, h3::before, h3::after {
+        display:inline-block;
+        vertical-align: middle;
+        
+      }
+      h3::before, h3::after {
+        height:0.2rem;
+        width:13rem;
+        background: orange;
+        content:""
+      }
+
+    .note {
+
+        position: absolute;
+        bottom: 62rem;
+        left: 27rem;
+    }
+    .fin-page{
+        display:flex;
+        font-size: 1.5rem;
+        padding:0 20rem;
+        width:60rem;
+        .note2{
+            position:absolute;
+            bottom:12.5rem;
+            left:24rem;
+            
+        }
+    }
+}

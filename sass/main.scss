@@ -1,0 +1,107 @@
+@import "variables";
+@import "mixins";
+@import "Layout";
+@import "menu";
+/*menu Principal*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  @include body;
+  
+}
+
+.menu-principal,.carte-menu {
+  @include form-page;
+  @include flex-column;
+  .alignement-menu {
+    align-items: center;
+    justify-content: space-around;
+    @include order;
+  }
+
+    a {
+      text-decoration: none;
+      .menu1 {
+        background-color: $couleur-page1;
+      }
+      .menu2 {
+        background-color: $couleur-page2;
+      }
+      .menu3 {
+        background-color: $couleur-page3;
+    }
+      .menu4 {
+        background-color: $couleur-page4;
+      }
+  }
+
+  .general {
+    border: groove 0px;
+    box-shadow: 0rem 0rem 1rem $border-menu;
+    width: 19rem;
+    height: 25rem;
+    margin: 30px;
+    padding: 8rem 40px;
+    .police {
+      font-size: 1.9rem;
+      text-align: center;
+      width:15rem;
+      &.police1 {
+        font-family:$enchante;
+      }
+      &.police2 {
+        font-family:$francaise;
+        font-size:1.3rem;
+      }
+      &.police3 {
+        font-family:$papille;
+      }
+      &.police4 {
+        font-family:$gout;
+      }
+    }
+  }
+    .fas.fa-music {
+      font-size: 40px;
+      margin-left: 70px;
+    }
+
+    .menu {
+      text-align: center;
+      margin-top: 3rem;;
+      font-size: 3rem;
+     
+    }
+    .font1{
+      font-family:$menu;
+    }
+    .font2{
+      font-family:"sans serif";
+      font-size:2.6rem;
+    }
+
+
+  .prochainement {
+    border: solid 2px $background-vert;
+    border-radius: 10px;
+    width: 17rem;
+    background-color: $background-vert;
+    margin: 30px;
+    margin-left: 23rem;
+
+    .centrer {
+      padding: 10px 30px;
+      text-align: center;
+      color: $text-oh;
+    }
+  }
+  }
+
+
+
+
+
+
