@@ -32,6 +32,7 @@ footer {
     height: 60rem; }
     .presentation .choix-menu.choix1 {
       background-color: #FCDFDA;
+      color: #3d1319;
       font-family: "Devonshire", cursive; }
     .presentation .choix-menu.choix2 {
       background-color: #FEF5FD;
@@ -46,36 +47,67 @@ footer {
     .presentation .choix-menu .carte {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
-      inset-inline-start: unset; }
-  .presentation .titre1 {
+      flex-wrap: wrap; }
+  .presentation h1 {
     position: absolute;
     text-align: center;
     top: 5rem;
     width: 65rem;
     font-size: 2rem; }
-  .presentation .titre2 {
+  .presentation h2 {
     text-align: center;
     font-size: 2rem; }
-    .presentation .titre2.page2 {
+    .presentation h2.page2 {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #e4852f, #8e5df9);
       margin: 1rem;
-      font-size: 1.7rem; }
-    .presentation .titre2.page3 {
+      font-size: 1.8rem; }
+    .presentation h2.page3 {
       font-size: 3rem;
-      margin: 2rem; }
-    .presentation .titre2.page4 {
-      font-size: 5rem;
-      margin: 4rem; }
+      background-image: -webkit-linear-gradient(left, #0031d6, #0567ea, #99cbf7, #9fd1f8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 2rem; }
+    .presentation h2.page4 {
+      font-size: 3rem;
+      background-image: -webkit-linear-gradient(left, #58ab54, #baff88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 2rem; }
   .presentation h3, .presentation h2 {
     text-align: center; }
-  .presentation h3, .presentation h3::before, .presentation h3::after {
-    display: inline-block;
-    vertical-align: middle; }
-  .presentation h3::before, .presentation h3::after {
-    height: 0.2rem;
-    width: 13rem;
-    background: orange;
-    content: ""; }
+  .presentation .dessin1:before {
+    display: block;
+    content: "";
+    margin-left: 27rem;
+    height: 2rem;
+    width: 36%;
+    border-style: groove;
+    border-color: #3d1319;
+    border-width: 0 0 0.2rem 0;
+    margin-bottom: -1.1rem; }
+  .presentation .dessin1:after {
+    display: block;
+    content: "";
+    height: 30px;
+    width: 36%;
+    border-style: groove;
+    border-color: #3d1319;
+    border-width: 0 0 3px 0;
+    margin-top: -2.3rem; }
+  .presentation .couleur2-1 {
+    color: #c77228; }
+  .presentation .couleur2-2 {
+    color: #a56696; }
+  .presentation .couleur2-3 {
+    color: #6e4fc7; }
+  .presentation .couleur3-1 {
+    color: #0031d6; }
+  .presentation .couleur3-2 {
+    color: #0567ea; }
+  .presentation .couleur3-3 {
+    color: #99cbf9; }
   .presentation .note {
     position: absolute;
     bottom: 62rem;
@@ -87,7 +119,7 @@ footer {
     width: 60rem; }
     .presentation .fin-page .note2 {
       position: absolute;
-      bottom: 12.5rem;
+      bottom: 9rem;
       left: 24rem; }
 
 /*menu Principal*/
@@ -121,6 +153,7 @@ body {
   .menu-principal a, .carte-menu a {
     text-decoration: none; }
     .menu-principal a .menu1, .carte-menu a .menu1 {
+      color: #3d1319;
       background-color: #FCDFDA; }
     .menu-principal a .menu2, .carte-menu a .menu2 {
       background-color: #FEF5FD; }
@@ -133,8 +166,8 @@ body {
     box-shadow: 0rem 0rem 1rem #919393;
     width: 19rem;
     height: 25rem;
-    margin: 30px;
-    padding: 8rem 40px; }
+    margin: 2rem;
+    padding: 8rem 2.5rem; }
     .menu-principal .general .police, .carte-menu .general .police {
       font-size: 1.9rem;
       text-align: center;
@@ -143,14 +176,27 @@ body {
         font-family: "Devonshire", cursive; }
       .menu-principal .general .police.police2, .carte-menu .general .police.police2 {
         font-family: "Croissant One", cursive;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left, #e4852f, #8e5df9);
         font-size: 1.3rem; }
       .menu-principal .general .police.police3, .carte-menu .general .police.police3 {
-        font-family: "Alex Brush", cursive; }
+        font-family: "Alex Brush", cursive;
+        background-image: -webkit-linear-gradient(left, #0031d6, #0567ea, #99cbf7, #9fd1f8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
       .menu-principal .general .police.police4, .carte-menu .general .police.police4 {
-        font-family: "Kaushan Script", cursive; }
+        font-family: "Kaushan Script", cursive;
+        background-image: -webkit-linear-gradient(left, #469b49, #89d46d, #baff88);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        height: 2rem; }
   .menu-principal .fas.fa-music, .carte-menu .fas.fa-music {
-    font-size: 40px;
-    margin-left: 70px; }
+    font-size: 2.5rem;
+    margin-left: 5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #f24761, #f98e6d); }
   .menu-principal .menu, .carte-menu .menu {
     text-align: center;
     margin-top: 3rem;
@@ -160,15 +206,21 @@ body {
   .menu-principal .font2, .carte-menu .font2 {
     font-family: "sans serif";
     font-size: 2.6rem; }
+  .menu-principal .coul-1, .carte-menu .coul-1 {
+    color: #c77228; }
+  .menu-principal .col-3, .carte-menu .col-3 {
+    color: #0088f6; }
+  .menu-principal .col-4, .carte-menu .col-4 {
+    color: #6ebe5f; }
   .menu-principal .prochainement, .carte-menu .prochainement {
-    border: solid 2px #569C87;
-    border-radius: 10px;
+    border: solid 0.1rem #569C87;
+    border-radius: 2rem;
     width: 17rem;
     background-color: #569C87;
-    margin: 30px;
+    margin: 2rem;
     margin-left: 23rem; }
     .menu-principal .prochainement .centrer, .carte-menu .prochainement .centrer {
-      padding: 10px 30px;
+      padding: 1.5rem 2rem;
       text-align: center;
       color: #F8C847; }
 

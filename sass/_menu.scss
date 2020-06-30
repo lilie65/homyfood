@@ -16,6 +16,7 @@
         height: 60rem;
         &.choix1{
         background-color: $couleur-page1;
+        color:$police_couleur1;
         font-family: $enchante;
         }
         &.choix2{
@@ -36,10 +37,10 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            inset-inline-start: unset;
+            
         }
     }
-.titre1{
+h1{    
     position:absolute;
     text-align: center;
     top:5rem;
@@ -47,27 +48,76 @@
     font-size:2rem;
 }
 
-    .titre2{
+    h2{
         text-align: center;
         font-size: 2rem;
         &.page2{
-           margin:1rem;
-            font-size:1.7rem;
-        }
-        &.page3{
-            font-size: 3rem;
-            margin:2rem;
-        }
-        &.page4{
-            font-size: 3rem;
-            margin:3rem;
-        }
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: -webkit-linear-gradient(left ,#e4852f,#8e5df9);
+            margin:1rem;
+             font-size:1.8rem;
+         }
+         &.page3{
+             font-size: 3rem;
+             background-image: -webkit-linear-gradient(left,#0031d6,#0567ea,#99cbf7,#9fd1f8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding:2rem;
+         }
+         &.page4{
+             font-size: 3rem;
+             background-image: -webkit-linear-gradient(left,#58ab54,#baff88);
+             -webkit-background-clip: text ;
+             -webkit-text-fill-color: transparent;
+             padding:2rem;
+         }
     }
     h3, h2 {
         text-align: center;
     }
-    .note {
+            .dessin1:before {
+                display:block;
+                content: "";
+                margin-left:27rem;
+                height: 2rem;
+                width:36%;
+                border-style: groove;
+                border-color: $police_couleur1;
+                border-width: 0 0 0.2rem 0;
+                margin-bottom:-1.1rem;
+                
+            }
+            .dessin1:after {
+                display:block;
+                content: "";
+                height: 30px;
+                width:36%;
+                border-style: groove;
+                border-color: $police_couleur1;
+                border-width: 0 0 3px 0;
+                margin-top:-2.3rem;
+                }
+                .couleur2-1{
+                    color:#c77228;
+                }
+                .couleur2-2{
+                   color:#a56696; 
+                }
+                .couleur2-3{
+                    color:#6e4fc7;
+                }
+                .couleur3-1{
+                    color:#0031d6;
+                }
+                .couleur3-2{
+                    color:#0567ea;
+                }
+                .couleur3-3{
+                    color:#99cbf9;
+                }
 
+    .note {
         position: absolute;
         bottom: 62rem;
         left: 27rem;
@@ -79,7 +129,7 @@
         width:60rem;
         .note2{
             position:absolute;
-            bottom:12.5rem;
+            bottom:9rem;
             left:24rem;
             
         }

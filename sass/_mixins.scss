@@ -14,7 +14,6 @@
   margin: 0 auto;
   background-color: white;
 }
-
 @mixin flex-column{
   display: flex;
   flex-direction: column;
@@ -28,5 +27,11 @@
 @mixin center{
   text-align: center;
 }
+@mixin page-3{
+  background-image: -webkit-linear-gradient(left,#58ab54,#baff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+ 
 
