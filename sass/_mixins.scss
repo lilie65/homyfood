@@ -14,6 +14,17 @@
   margin: 0 auto;
   background-color: white;
 }
+@mixin mobile{
+  @media screen and (min-width: 300px) and (max-width: 600px) and (orientation : portrait){
+    @content;
+  }
+}
+@mixin autres {
+  @media only screen and (min-width : 600px) and (max-width : 1024px){
+    @content;
+  }
+}
+
 @mixin flex-column{
   display: flex;
   flex-direction: column;
@@ -33,5 +44,5 @@
   -webkit-text-fill-color: transparent;
 }
 
- 
+
 

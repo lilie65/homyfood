@@ -1,137 +1,187 @@
 /*pages annexe*/
 
 .presentation {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    font-size:1.3rem;
-    white-space: pre-line;
-    
-    .choix-menu {
-        border: groove 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  white-space: pre-line;
+  @include mobile {
+    font-size:1 rem;
+  }
+  .choix-menu {
+    border: groove 0px;
     box-shadow: 0rem 0rem 1rem $border-menu;
-        padding: 60px;
-        margin: 8rem;
-        width: 50rem;
-        height: 60rem;
-        &.choix1{
-        background-color: $couleur-page1;
-        color:$police_couleur1;
-        font-family: $enchante;
-        }
-        &.choix2{
-        background-color: $couleur-page2;
-        font-family:$francaise;
-        font-size:1.1rem;
-        }
-        &.choix3{
-            background-color: $couleur-page3;
-            font-family:$papille;
-        }
-        &.choix4{
-            background-color: $couleur-page4;;
-            font-family:$gout;
-        }
-
-        .carte {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            
-        }
+    padding: 60px;
+    margin: 7rem;
+    width: 50rem;
+    height: 60rem;
+    @include mobile{
+      margin: 0rem;
+      margin-top:8rem;
+      padding:1rem;
+      width:100%;
+      height:65rem;
     }
-h1{    
-    position:absolute;
+    @include autres {
+      margin: 0rem;
+      margin-top:8rem;
+        width:100%;
+      }
+    
+   
+    &.choix1 {
+      background-color: $couleur-page1;
+      color: $police_couleur1;
+      font-family: $enchante;
+    }
+    &.choix2 {
+      background-color: $couleur-page2;
+      font-family: $francaise;
+      font-size: 1.1rem;
+    }
+    &.choix3 {
+      background-color: $couleur-page3;
+      font-family: $papille;
+    }
+    &.choix4 {
+      background-color: $couleur-page4;
+      font-family: $gout;
+    }
+
+    .carte {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  .taille{
+    @include mobile {
+      display:block;
+      width:18rem;
+    }
+  }
+  h1 {
+    position: absolute;
     text-align: center;
-    top:5rem;
-    width:65rem;
-    font-size:2rem;
-}
+    top: 5rem;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    &.page2 {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #e4852f, #8e5df9);
+      margin: 1rem;
+      font-size: 1.8rem;
+    }
+    &.page3 {
+      font-size: 3rem;
+      background-image: -webkit-linear-gradient(left,$couleur3-1,$couleur3-2,$couleur3-3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 2rem;
+      @include mobile{
+        font-size:2.3rem;
+      }
+    }
+    &.page4 {
+      font-size: 3rem;
+      background-image: -webkit-linear-gradient(left, #58ab54, #baff88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 2rem;
+      @include mobile{
+        font-size:2.3rem;
+      }
+    }
+  }
+  h3,
+  h2 {
+    text-align: center;
+  }
+  .dessin1{
+    display:flex;
+    line-height: 30px;
+    &:before,
+    &:after{
+      display:inline-block;
+      content: "";
+      height: 30px;
+      width:100%;
+      background-image:url(../img/image1-1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-origin: 0 0;
+      background-position:center center;
+    }
+    &:after{
+      background-position-y: bottom;
+      transform:rotate(180deg);
+    }
+  }
+ 
+  .couleur2-1 {
+    color: $couleur2-1;
+  }
+  .couleur2-2 {
+    color: $couleur2-2;
+  }
+  .couleur2-3 {
+    color: $couleur2-3;
+  }
+  .couleur3-1 {
+    color: $couleur3-1;
+  }
+  .couleur3-2 {
+    color: $couleur3-2;
+  }
+  .couleur3-3 {
+    color: $couleur3-3;
+  }
 
-    h2{
-        text-align: center;
-        font-size: 2rem;
-        &.page2{
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: -webkit-linear-gradient(left ,#e4852f,#8e5df9);
-            margin:1rem;
-             font-size:1.8rem;
-         }
-         &.page3{
-             font-size: 3rem;
-             background-image: -webkit-linear-gradient(left,#0031d6,#0567ea,#99cbf7,#9fd1f8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            padding:2rem;
-         }
-         &.page4{
-             font-size: 3rem;
-             background-image: -webkit-linear-gradient(left,#58ab54,#baff88);
-             -webkit-background-clip: text ;
-             -webkit-text-fill-color: transparent;
-             padding:2rem;
-         }
+  .note {
+    position: absolute;
+    bottom: 58rem;
+    left: 20rem;
+    @include mobile{
+      bottom: 58.5rem;
+      left:-5%;
     }
-    h3, h2 {
-        text-align: center;
+    @include autres {
+      bottom: 51rem;
+      left:21%;
     }
-            .dessin1:before {
-                display:block;
-                content: "";
-                margin-left:27rem;
-                height: 2rem;
-                width:36%;
-                border-style: groove;
-                border-color: $police_couleur1;
-                border-width: 0 0 0.2rem 0;
-                margin-bottom:-1.1rem;
-                
-            }
-            .dessin1:after {
-                display:block;
-                content: "";
-                height: 30px;
-                width:36%;
-                border-style: groove;
-                border-color: $police_couleur1;
-                border-width: 0 0 3px 0;
-                margin-top:-2.3rem;
-                }
-                .couleur2-1{
-                    color:#c77228;
-                }
-                .couleur2-2{
-                   color:#a56696; 
-                }
-                .couleur2-3{
-                    color:#6e4fc7;
-                }
-                .couleur3-1{
-                    color:#0031d6;
-                }
-                .couleur3-2{
-                    color:#0567ea;
-                }
-                .couleur3-3{
-                    color:#99cbf9;
-                }
 
-    .note {
-        position: absolute;
-        bottom: 62rem;
-        left: 27rem;
+  }
+  .fin-page {
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0 15rem;
+    width: 50rem;
+    @include mobile{
+      padding: 0 5rem;
+      width:22rem;
     }
-    .fin-page{
-        display:flex;
-        font-size: 1.5rem;
-        padding:0 20rem;
-        width:60rem;
-        .note2{
-            position:absolute;
-            bottom:9rem;
-            left:24rem;
-            
-        }
+    @include autres{
+      width: 40rem;
+      padding: 0 12rem;
     }
+    .note2 {
+      position: absolute;
+      bottom: 10.5rem;
+      left: 18rem;
+      @include mobile{
+        bottom: 3.5rem;
+        left: -2rem;
+      }
+      @include autres{
+        bottom: 4rem;
+        left: 8rem;
+      }
+    }
+  }
 }
