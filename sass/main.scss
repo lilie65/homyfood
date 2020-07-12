@@ -10,10 +10,10 @@
 }
 body {
   @include body;
-  
 }
 
-.menu-principal,.carte-menu {
+.menu-principal,
+.carte-menu {
   @include form-page;
   @include flex-column;
   .alignement-menu {
@@ -22,20 +22,21 @@ body {
     @include order;
   }
 
-    a {
-      text-decoration: none;
-      .menu1 {
-        background-color: $couleur-page1;
-      }
-      .menu2 {
-        background-color: $couleur-page2;
-      }
-      .menu3 {
-        background-color: $couleur-page3;
+  a {
+    text-decoration: none;
+    .menu1 {
+      color: $police_couleur1;
+      background-color: $couleur-page1;
     }
-      .menu4 {
-        background-color: $couleur-page4;
-      }
+    .menu2 {
+      background-color: $couleur-page2;
+    }
+    .menu3 {
+      background-color: $couleur-page3;
+    }
+    .menu4 {
+      background-color: $couleur-page4;
+    }
   }
 
   .general {
@@ -43,65 +44,97 @@ body {
     box-shadow: 0rem 0rem 1rem $border-menu;
     width: 19rem;
     height: 25rem;
-    margin: 30px;
-    padding: 8rem 40px;
-    .police {
-      font-size: 1.9rem;
-      text-align: center;
-      width:15rem;
-      &.police1 {
-        font-family:$enchante;
-      }
-      &.police2 {
-        font-family:$francaise;
-        font-size:1.3rem;
-      }
-      &.police3 {
-        font-family:$papille;
-      }
-      &.police4 {
-        font-family:$gout;
-      }
+    margin: 2rem;
+    padding: 8rem 2.5rem;
+    @include mobile {
+      margin: 1rem;
+  }
+  .police {
+    font-size: 1.9rem;
+    text-align: center;
+    width: 15rem;
+    &.police1 {
+      font-family: $enchante;
+    }
+    &.police2 {
+      font-family: $francaise;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: -webkit-linear-gradient(left, #e4852f, #8e5df9);
+
+      font-size: 1.3rem;
+    }
+    &.police3 {
+      font-family: $papille;
+      background-image: -webkit-linear-gradient(
+        left,
+        #0031d6,
+        #0567ea,
+        #99cbf7,
+        #9fd1f8
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      height: 2rem;
+    }
+    &.police4 {
+      font-family: $gout;
+      background-image: -webkit-linear-gradient(
+        left,
+        #469b49,
+        #89d46d,
+        #baff88,
+        #baff85
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      height: 2rem;
     }
   }
-    .fas.fa-music {
-      font-size: 40px;
-      margin-left: 70px;
-    }
+}
+.fas.fa-music {
+  font-size: 2.5rem;
+  margin-left: 5rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, #f24761, #f98e6d);
+}
 
-    .menu {
-      text-align: center;
-      margin-top: 3rem;;
-      font-size: 3rem;
-     
-    }
-    .font1{
-      font-family:$menu;
-    }
-    .font2{
-      font-family:"sans serif";
-      font-size:2.6rem;
-    }
+.menu {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+.font1 {
+  font-family: $menu;
+}
+.font2 {
+  font-family: "sans serif";
+  font-size: 2.6rem;
+}
+.coul-1 {
+  color: #c77228;
+}
+.col-3 {
+  color: #0088f6;
+}
+.col-4 {
+  color: #6ebe5f;
+}
 
-
-  .prochainement {
-    border: solid 2px $background-vert;
-    border-radius: 10px;
-    width: 17rem;
-    background-color: $background-vert;
-    margin: 30px;
-    margin-left: 23rem;
-
-    .centrer {
-      padding: 10px 30px;
-      text-align: center;
-      color: $text-oh;
-    }
-  }
-  }
-
-
-
-
-
-
+.prochainement {
+display:flex;
+justify-content: center;
+.centrer{
+  border: solid 0 $background-vert;
+  border-radius: 2rem;
+  background-color: $background-vert;
+  color: $text-oh;
+  margin-bottom:7rem;
+  margin-top:1rem;
+  padding:1.5rem ;
+  width: 20rem;
+}
+  
+}
+}

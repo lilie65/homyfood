@@ -1,21 +1,35 @@
 header{
   background-color:$background-vert;
-  padding:30px;
+  padding:2.5rem;
+  
   h1 {
     color:$text-oh;
-    font-size: 60px;
+    font-size: 3rem;
     text-align:center;
   }
+ 
 }
+
 footer {
-  background-color: $background-vert;
-  padding: 30px;
-  .ranger{
-    display:flex;
-    justify-content: space-between;
-    .couleur {
-      color: $text-oh;
-      font-size:1rem;
+  position:fixed;
+  bottom:0rem;
+  width:64rem;
+  @include mobile{
+    width:100%
+  }
+  @include autres{
+width:100%;
+  }
+  &.scroll{
+    background-color: $background-vert;
+    padding: 30px;
+    .ranger{
+      display:flex;
+      justify-content: space-between;
+      .couleur {
+        color: $text-oh;
+        font-size:1rem;
+      }
     }
   }
 }

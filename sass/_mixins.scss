@@ -14,6 +14,16 @@
   margin: 0 auto;
   background-color: white;
 }
+@mixin mobile{
+  @media screen and (min-width: 300px) and (max-width: 600px) and (orientation : portrait){
+    @content;
+  }
+}
+@mixin autres {
+  @media only screen and (min-width : 600px) and (max-width : 1024px){
+    @content;
+  }
+}
 
 @mixin flex-column{
   display: flex;
@@ -28,5 +38,11 @@
 @mixin center{
   text-align: center;
 }
+@mixin page-3{
+  background-image: -webkit-linear-gradient(left,#58ab54,#baff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 
