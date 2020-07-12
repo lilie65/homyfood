@@ -7,29 +7,29 @@
   font-size: 1.3rem;
   white-space: pre-line;
   @include mobile {
-    font-size:1 rem;
+    font-size: 1 rem;
   }
   .choix-menu {
     border: groove 0px;
     box-shadow: 0rem 0rem 1rem $border-menu;
-    padding: 60px;
-    margin: 7rem;
-    width: 50rem;
-    height: 60rem;
-    @include mobile{
+    margin: 4rem;
+    height: 100%;
+    margin-bottom:8rem;
+
+    @include mobile {
       margin: 0rem;
-      margin-top:8rem;
-      padding:1rem;
-      width:100%;
-      height:65rem;
+      margin-top: 8rem;
+      margin-bottom:8rem;
+      padding: 1rem;
+      width: 100%;
+      height: 100%;
     }
     @include autres {
       margin: 0rem;
-      margin-top:8rem;
-        width:100%;
-      }
-    
-   
+      margin-top: 8rem;
+      margin-bottom:8rem;
+      width: 100%;
+    }
     &.choix1 {
       background-color: $couleur-page1;
       color: $police_couleur1;
@@ -38,7 +38,7 @@
     &.choix2 {
       background-color: $couleur-page2;
       font-family: $francaise;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
     &.choix3 {
       background-color: $couleur-page3;
@@ -52,78 +52,173 @@
     .carte {
       display: flex;
       justify-content: space-between;
+      width: 100%;
       flex-wrap: wrap;
+      padding: 0 13%;
+      @include mobile{
+        padding: 0 3%;
+      }
+    }
+    .carte1 {
+      margin-left: 13%;
+      @include mobile{
+        margin-left:3%;
+      }
     }
   }
-  .taille{
-    @include mobile {
-      display:block;
-      width:18rem;
-    }
+  .taille {
+    display: inline-block;
+    width: 85%;
+  }
+  .taille2 {
+    font-size: larger;
   }
   h1 {
     position: absolute;
     text-align: center;
-    top: 5rem;
+    top: 2rem;
     width: 100%;
     font-size: 1.5rem;
+    @include mobile{
+      top:6rem;
+    }
+    @include autres{
+      top:6rem;
+    }
   }
   h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 2rem;
     &.page2 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e4852f, #8e5df9);
-      margin: 1rem;
       font-size: 1.8rem;
+      @include mobile {
+        font-size: 1.5rem;
+      }
     }
     &.page3 {
-      font-size: 3rem;
-      background-image: -webkit-linear-gradient(left,$couleur3-1,$couleur3-2,$couleur3-3);
+      font-size: 4rem;
+      background-image: -webkit-linear-gradient(
+        left,
+        #0031d6,
+        #0567ea,
+        #99cbf7,
+        #9fd1f8
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       padding: 2rem;
-      @include mobile{
-        font-size:2.3rem;
+      @include mobile {
+        font-size: 2.35rem;
+        padding: 0.5rem;
       }
     }
     &.page4 {
-      font-size: 3rem;
-      background-image: -webkit-linear-gradient(left, #58ab54, #baff88);
+      font-size: 4rem;
+      background-image: -webkit-linear-gradient(
+        left,
+        #469b49,
+        #89d46d,
+        #baff88,
+        #baff85
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       padding: 2rem;
-      @include mobile{
-        font-size:2.3rem;
+      @include mobile {
+        font-size: 2.3rem;
+        padding: 0.5rem;
       }
     }
   }
-  h3,
-  h2 {
-    text-align: center;
-  }
-  .dessin1{
-    display:flex;
-    line-height: 30px;
+
+  .dessin {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    @include mobile {
+      padding: 0.5rem 0rem;
+      text-align: center;
+    }
+    @include autres{
+      padding: 0.5rem 1rem;
+      text-align:center;
+    }
     &:before,
-    &:after{
-      display:inline-block;
+    &:after {
+      display: inline-block;
       content: "";
-      height: 30px;
-      width:100%;
-      background-image:url(../img/image1-1.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-origin: 0 0;
-      background-position:center center;
+      background-position: center center;
+      width: 33%;
     }
-    &:after{
-      background-position-y: bottom;
-      transform:rotate(180deg);
+    &.forme1-1:before {
+      background-image: url(../img/image1-1.png);
+      width: 41%;
+    }
+    &.forme1-1:after {
+      background-image: url(../img/image1-1.png);
+      width: 41%;
+    }
+    &.forme2-1 {
+      font-size: 1.1rem;
+    }
+    &.forme2-1:before {
+      background-image: url(../img/image2-1.png);
+    }
+    &.forme2-1:after {
+      background-image: url(../img/image2-2.png);
+    }
+    &.forme2-2 {
+      font-size: 1.1rem;
+    }
+    &.forme2-2:before {
+      background-image: url(../img/image2-3.png);
+    }
+    &.forme2-2:after {
+      background-image: url(../img/image2-4.png);
+    }
+    &.forme2-3 {
+      font-size: 1.1rem;
+    }
+    &.forme2-3:before {
+      background-image: url(../img/image2-5.png);
+    }
+    &.forme2-3:after {
+      background-image: url(../img/image2-6.png);
+    }
+    &.forme3-1:before {
+      background-image: url(../img/image3-1.png);
+    }
+    &.forme3-1:after {
+      background-image: url(../img/image3-2.png);
+    }
+    &.forme3-2:before {
+      background-image: url(../img/image3-3.png);
+    }
+    &.forme3-2:after {
+      background-image: url(../img/image3-4.png);
+    }
+    &.forme3-3:before {
+      background-image: url(../img/image3-5.png);
+    }
+    &.forme3-3:after {
+      background-image: url(../img/image3-6.png);
+    }
+    &.forme4-1:before {
+      background-image: url(../img/image4-1.png);
+    }
+    &.forme4-1:after {
+      background-image: url(../img/image4-2.png);
     }
   }
- 
+
   .couleur2-1 {
     color: $couleur2-1;
   }
@@ -133,55 +228,11 @@
   .couleur2-3 {
     color: $couleur2-3;
   }
-  .couleur3-1 {
-    color: $couleur3-1;
-  }
-  .couleur3-2 {
-    color: $couleur3-2;
-  }
-  .couleur3-3 {
-    color: $couleur3-3;
-  }
 
-  .note {
-    position: absolute;
-    bottom: 58rem;
-    left: 20rem;
-    @include mobile{
-      bottom: 58.5rem;
-      left:-5%;
-    }
-    @include autres {
-      bottom: 51rem;
-      left:21%;
-    }
-
-  }
+  
   .fin-page {
-    display: flex;
     font-size: 1.5rem;
-    padding: 0 15rem;
-    width: 50rem;
-    @include mobile{
-      padding: 0 5rem;
-      width:22rem;
-    }
-    @include autres{
-      width: 40rem;
-      padding: 0 12rem;
-    }
-    .note2 {
-      position: absolute;
-      bottom: 10.5rem;
-      left: 18rem;
-      @include mobile{
-        bottom: 3.5rem;
-        left: -2rem;
-      }
-      @include autres{
-        bottom: 4rem;
-        left: 8rem;
-      }
-    }
+    width: 100%;
+    
   }
 }
