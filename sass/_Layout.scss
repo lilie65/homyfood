@@ -1,42 +1,50 @@
-header{
-  background-color:$background-vert;
-  padding:2.5rem;
-  
-  h1{
+header {
+  background-color: $background-vert;
+  padding: 2.5rem;
+
+  h1 {
     font-size: 3rem;
-    text-align:center;
-    .couleur{
-      color:$text-oh;
+    text-align: center;
+    color: $text-oh;
+    a {
+      color: $text-oh;
     }
   }
- 
 }
 a {
   text-decoration: none;
 }
 footer {
-  position:fixed;
-  bottom:0rem;
-  width:64rem;
-  &.scroll{
-    background-color: $background-vert;
-    padding: 30px;
-    .ranger{
-      display:flex;
-      justify-content: space-between;
-      .couleur {
-        color: $text-oh;
-        font-size:1.5rem;
-        
+  position: fixed;
+  bottom: 0rem;
+  width: 64rem;
+  background-color: $background-vert;
+  padding: 30px;
+  &.footer {
+    display: flex;
+    justify-content: space-between;
+  a {
+    color: $text-oh;
+    font-size: 1.5rem;
+    &:hover {
+      &:hover {
+        @include wizz;
+        }
       }
-    }
-    @include mobile{
-      width:100%;
+    @include mobile {
       font-size: 1rem;
     }
-    @include autres{
-  width:100%;
-  font-size: 1rem;
+    @include autres {
+      font-size: 1rem;
+    }
+    }
+    @include mobile {
+      width: 100%;
+      font-size: 1rem;
+    }
+    @include autres {
+      width: 100%;
+      font-size: 1rem;
     }
   }
 }

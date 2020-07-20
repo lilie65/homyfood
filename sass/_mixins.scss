@@ -43,6 +43,53 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@mixin effet-proch{
+        content: " .";
+        animation: dots 3s infinite;
+        
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 2.2rem 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #fdcb46;
+    text-shadow: 1rem 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 2.2rem 0 0 #fdcb46;
+  }
+  80%,100%{
+    text-shadow: 1rem 0 0 #fdcb46, 2.2rem 0 0 #fdcb46;
+  }
+}
+}
+@mixin wizz{
+  cursor: pointer;
+  animation: effet 80ms ease-in-out;
+  animation-iteration-count: 20;
+}
+
+@keyframes effet {
+    0% {
+      transform: translateX(9%);
+      transform: rotate(4deg);
+    }
+    100% {
+      transform: translateX(-9%);
+      transform: rotate(-4deg);
+    }
+  }
+@mixin souligne{
+  
+  background-size: 0 100%;
+  transition: background-size 0.6s;
+  padding: 10px;
+&:hover {
+  background-size: 100% 100%;
+}
+    
+}
 
 
 
