@@ -21,68 +21,78 @@ body {
     justify-content: space-around;
     @include order;
   }
-
- 
-
-  .general {
-    border: groove 0px;
-    box-shadow: 0rem 0rem 1rem $border-menu;
-    width: 19rem;
-    height: 25rem;
-    margin: 2rem;
-      
-    
-    a {
-      text-decoration: none;
-      .menu1 {
-        color: $police_couleur1;
-        background-color: $couleur-page1;
-        padding: 7.3rem 2.5rem;
-      }
-      .menu2 {
-        background-color: $couleur-page2;
-        padding: 9.8rem 2.5rem;
-      }
-      .menu3 {
-        background-color: $couleur-page3;
-        padding: 9.5rem 2.5rem;
-      }
-      .menu4 {
-        background-color: $couleur-page4;
-        padding: 9.5rem 2.5rem;
-      }
-      
-    }
-    @include mobile {
-      margin: 1rem;
-  }
-  .btn{
-    transform: scale(1);
-    opacity:1;
-  &:hover{
-    transform: scale(1.2);
-    transition: transform 430ms ease-in-out;
-    opacity:70%;
 }
+
+.menus {
+  display:block;
+  border: groove 0px;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 1rem $border-menu;
+  width: 19rem;
+  height: 25rem;
+  margin: 2rem;
+   a{
+    height:100%;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 430ms ease-in-out;
+    opacity: 70%;
   }
-  .police {
-    font-size: 1.9rem;
-    text-align: center;
-    width: 15rem;
-     
-  
-    &.police1 {
+}
+  &.menu1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $couleur-page1;
+    font-size: 2.3rem;
+      text-align: center;
+        .note-index {
+          margin-top: 6rem;
+          font-size: 4rem;
+        
+      }
+    p {
       font-family: $enchante;
+      color: $police_couleur1;
+      margin-top: 1rem;
     }
-    &.police2 {
+    h2 {
+      font-family: $menu;
+      color: $police_couleur1;
+      margin-top: 4rem;
+    }
+    
+  }
+  &.menu2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $couleur-page2;
+    font-size: 1.5rem;
+      text-align: center;
+    p {
       font-family: $francaise;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e4852f, #8e5df9);
-
-      font-size: 1.3rem;
+      margin-top:8rem;
     }
-    &.police3 {
+    h2 {
+      font-family: "sans serif";
+      font-size: 2.6rem;
+      color: #c77228;
+      margin-top: 4rem;
+    }
+  }
+  &.menu3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $couleur-page3;
+    font-size: 2.3rem;
+      text-align: center;
+    p {
       font-family: $papille;
       background-image: -webkit-linear-gradient(
         left,
@@ -93,9 +103,24 @@ body {
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      height: 2rem;
+      margin-top:8rem;
+      height:3rem;
     }
-    &.police4 {
+    h2 {
+      font-family: "sans serif";
+      font-size: 2.6rem;
+      color: #0088f6;
+      margin-top:4rem;
+    }
+  }
+  &.menu4 {
+    background-color: $couleur-page4;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.3rem;
+      text-align: center;
+    p {
       font-family: $gout;
       background-image: -webkit-linear-gradient(
         left,
@@ -106,63 +131,39 @@ body {
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      height: 2rem;
+      margin-top:8rem;
+      height: 3rem;
+    }
+    h2 {
+      font-family: "sans serif";
+      font-size: 2.6rem;
+      color: #6ebe5f;
+      margin-top:4rem;
     }
   }
 }
-.fas.fa-music {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #f24761, #f98e6d);
-  &.note-index{
-    font-size: 4rem;
-    margin-bottom:1rem;
+  .prochainement {
+    display: flex;
+    justify-content: center;
+    h2 {
+      border: solid 0 $background-vert;
+      border-radius: 1.3rem;
+      background-color: $background-vert;
+      color: $text-oh;
+      margin-bottom: 7rem;
+      margin-top: 1rem;
+      padding: 1.5rem;
+      width: 20rem;
+      &:after {
+        @include effet-proch;
+      }
+    }
   }
-}
-
-.menu {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 3rem;
+  .fas.fa-music {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #f24761, #f98e6d);
+  }
  
-}
-.font1 {
-  font-family: $menu;
-}
-.font2 {
-  font-family: "sans serif";
-  font-size: 2.6rem;
-}
-.coul-1 {
-  color: #c77228;
-}
-.col-3 {
-  color: #0088f6;
-}
-.col-4 {
-  color: #6ebe5f;
-}
-
-.prochainement {
-display:flex;
-justify-content: center;
-.centrer{
-  border: solid 0 $background-vert;
-  border-radius: 2rem;
-  background-color: $background-vert;
-  color: $text-oh;
-  margin-bottom:7rem;
-  margin-top:1rem;
-  padding:1.5rem ;
-  width: 20rem;
-  &:after{
-    content:"...";
-    transform:scale(1);
-    &:hover{
-      transform:(800%) scale(6);
-    }
-  }
-}
   
-}
-}
+ 

@@ -62,7 +62,8 @@
       background-size: contain;
       background-origin: 0 0;
       background-position: center center;
-      width: 32%;
+      width: 31%;
+     
     }
   }
   .carte {
@@ -76,30 +77,46 @@
       width: 80%;
     }
     .prix{
-      font-size: larger;
+      font-size: large;
     }
     @include mobile {
-      padding: 0 3%;
+      padding: 0 2%;
     }
   }
   .carte-suite {
     margin-left: 10%;
     @include mobile {
-      margin-left: 3%;
+      margin-left: 2%;
     }
   }
     &.page1 {
       background-color: $couleur-page1;
       color: $police_couleur1;
       font-family: $enchante;
+      .carte{
+        padding: 0 2.5rem;
+        @include mobile {
+          padding: 0 0;
+        }
+      }
+      .carte-suite {
+        margin-left: 2.5rem;
+        @include mobile {
+          margin-left: 0;
+        }
+      }
       h3{
+        span{
+          background: linear-gradient(to top, $police_couleur1 0%, $police_couleur1 4px, transparent 5px) no-repeat;
+        @include souligne;
+    }
       &:before {
         background-image: url(../img/image1-1.png);
-        width: 41%;
+        width: 38%;
       }
       &:after {
         background-image: url(../img/image1-1.png);
-        width: 41%;
+        width: 38%;
       }
     }
     .note {
@@ -120,7 +137,7 @@
     &.page2 {
       background-color: $couleur-page2;
       font-family: $francaise;
-      font-size: 1rem;
+      font-size:0.8rem;
       h2 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -143,6 +160,10 @@
       .orange{
         h3{
         font-size: 1.1rem;
+        span{
+          background: linear-gradient(to top, $couleur2-1 0%, $couleur2-1 4px, transparent 5px) no-repeat;
+          @include souligne;
+    }
       &:before {
         background-image: url(../img/image2-1.png);
       }
@@ -154,6 +175,10 @@
       .rose {
         h3{
         font-size: 1.1rem;
+        span{
+          background: linear-gradient(to top, $couleur2-2 0%, $couleur2-2 4px, transparent 5px) no-repeat;
+          @include souligne;
+    }
       &:before {
         background-image: url(../img/image2-3.png);
       }
@@ -165,6 +190,10 @@
       .violet {
         h3{
         font-size: 1.1rem;
+        span{
+          background: linear-gradient(to top, $couleur2-3 0%, $couleur2-3 4px, transparent 5px) no-repeat;
+          @include souligne;
+    }
       &:before {
         background-image: url(../img/image2-5.png);
       }
@@ -177,8 +206,29 @@
     &.page3 {
       background-color: $couleur-page3;
       font-family: $papille;
+      h2{
+      font-size: 4rem;
+      background-image: -webkit-linear-gradient(
+        left,
+        #0031d6,
+        #0567ea,
+        #99cbf7,
+        #9fd1f8
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding: 2rem;
+      @include mobile {
+        font-size: 2.35rem;
+        padding: 0.5rem;
+      }
+    }
       .foncer{
         h3{
+          span{
+            background: linear-gradient(to top, #0031d6 0%,#0031d6  4px, transparent 5px) no-repeat;
+            @include souligne;
+      }
         &:before {
           background-image: url(../img/image3-1.png);
         }
@@ -189,6 +239,10 @@
     }
       .clair{
         h3{
+          span{
+            background: linear-gradient(to top, #1373ee 0%, #1373ee 4px, transparent 5px) no-repeat;
+            @include souligne;
+      }
         &:before {
           background-image: url(../img/image3-3.png);
         }
@@ -199,6 +253,10 @@
     }
         .tres-clair{
           h3{
+            span{
+              background: linear-gradient(to top, #0d9ef4 0%, #0d9ef4 4px, transparent 5px) no-repeat;
+              @include souligne;
+        }
         &:before {
           background-image: url(../img/image3-5.png);
         }
@@ -207,7 +265,7 @@
         }
       }
     }
-    }
+  }
     &.page4 {
       background-color: $couleur-page4;
       font-family: $gout;
@@ -223,12 +281,18 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 2rem;
+        height:5.5rem;
         @include mobile {
+          height:3rem;
           font-size: 2.3rem;
           padding: 0.5rem;
         }
       }
       h3{
+        span{
+          background: linear-gradient(to top, #469b49 0%, #baff88 4px, transparent 5px) no-repeat;
+          @include souligne;
+    }
         &:before {
           background-image: url(../img/image4-1.png);
           
