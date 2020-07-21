@@ -24,35 +24,34 @@ body {
 }
 
 .menus {
-  display:block;
+  display: block;
   border: groove 0px;
   border-radius: 1rem;
   box-shadow: 0rem 0rem 1rem $border-menu;
   width: 19rem;
   height: 25rem;
   margin: 2rem;
-   a{
-    height:100%;
+  a {
+    height: 100%;
     /*grossi les diferents menus et éclairci celui-ci au survole de la souris*/
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 430ms ease-in-out;
-    opacity: 70%;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: transform 430ms ease-in-out;
+      opacity: 70%;
+    }
   }
-}
   &.menu1 {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: $couleur-page1;
     font-size: 2.3rem;
-      text-align: center;
-        .note-index {
-          margin-top: 5rem;
-          font-size: 4rem;
-        
-      }
+    text-align: center;
+    .note-index {
+      margin-top: 5rem;
+      font-size: 4rem;
+    }
     p {
       font-family: $enchante;
       color: $police_couleur1;
@@ -61,39 +60,38 @@ body {
     h2 {
       font-family: $menu;
       color: $police_couleur1;
-      margin-top: 4rem;
-      font-size:2.6rem;
+      margin-top: 2rem;
+      font-size: 2.6rem;
     }
-    
   }
   &.menu2 {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: $couleur-page2;
     font-size: 1.5rem;
-      text-align: center;
+    text-align: center;
     p {
       font-family: $francaise;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e4852f, #8e5df9);
-      margin-top:10rem;
+      margin-top: 10rem;
     }
     h2 {
       font-family: $francaise;
       font-size: 2.6rem;
       color: #c77228;
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
   }
   &.menu3 {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: $couleur-page3;
     font-size: 2.3rem;
-      text-align: center;
+    text-align: center;
     p {
       font-family: $papille;
       background-image: -webkit-linear-gradient(
@@ -105,23 +103,22 @@ body {
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-top:10rem;
-      height:3rem;
+      margin-top: 10rem;
     }
     h2 {
       font-family: $menu;
       font-size: 2.6rem;
       color: #0088f6;
-      margin-top:4rem;
+      margin-top: 2rem;
     }
   }
   &.menu4 {
     background-color: $couleur-page4;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 2.3rem;
-      text-align: center;
+    text-align: center;
     p {
       font-family: $gout;
       background-image: -webkit-linear-gradient(
@@ -133,41 +130,37 @@ body {
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-top:10rem;
-      height: 3rem;
+      margin-top: 10rem;
     }
     h2 {
       font-family: $menu;
       font-size: 2.6rem;
       color: #6ebe5f;
-      margin-top:4rem;
+      margin-top: 2rem;
     }
   }
 }
-  .prochainement {
-    display: flex;
-    justify-content: center;
-    h2 {
-      border: solid 0 $background-vert;
-      border-radius: 1rem;
-      background-color: $background-vert;
-      color: $text-oh;
-      margin-bottom: 7rem;
-      margin-top: 1rem;
-      padding: 1.3rem;
-      width: 17rem;
-      &:after {
-        margin-left:0.5rem;
-        @include effet-proch;
-      }
+.prochainement {
+  display: flex;
+  justify-content: center;
+  h2 {
+    border: solid 0 $background-vert;
+    border-radius: 1rem;
+    background-color: $background-vert;
+    color: $text-oh;
+    margin-bottom: 7rem;
+    margin-top: 1rem;
+    padding: 1.3rem;
+    width: 19rem;
+    &:after {
+      margin-left: 0.5rem;
+      @include effet-proch;
     }
   }
-  /*note musique menu1 ainsi que page1*/
-  .fas.fa-music {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: -webkit-linear-gradient(left, #f24761, #f98e6d);
-  }
- 
-  
- 
+}
+/*note musique menu1 ainsi que page1*/
+.fas.fa-music {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, #f24761, #f98e6d);
+}

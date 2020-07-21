@@ -1,11 +1,10 @@
-@mixin body{
+@mixin body {
   font-family: sans-serif;
   font-size: 1rem;
-  line-height: 20px;
   color: black;
   background-color: $page;
 }
-@mixin form-page{
+@mixin form-page {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -14,76 +13,74 @@
   margin: 0 auto;
   background-color: white;
   /*petit ecran de type mobile*/
-}@mixin mobile{
+}
+@mixin mobile {
   @media only screen and (max-width: 760px) {
     @content;
   }
 }
 /*petit ecran de type tablette*/
 @mixin tablette {
-  @media only screen and (max-width: 1024px) and (orientation : portrait){
+  @media only screen and (max-width: 1024px) and (orientation: portrait) {
     @content;
   }
 }
-@mixin flex-column{
+@mixin flex-column {
   display: flex;
   flex-direction: column;
 }
 
-@mixin order{
+@mixin order {
   display: flex;
   flex-wrap: wrap;
 }
 /* effet point d'exclamation dynamique section menu principal*/
-@mixin effet-proch{
-        content: " .";
-        animation: point-suspention 3s infinite;
-        
-@keyframes point-suspention {
-  0%, 20% {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 2.2rem 0 0 rgba(0, 0, 0, 0);
+@mixin effet-proch {
+  content: " .";
+  animation: point-suspention 3s infinite;
+
+  @keyframes point-suspention {
+    0%,
+    20% {
+      color: rgba(0, 0, 0, 0);
+      text-shadow: 2.2rem 0 0 rgba(0, 0, 0, 0);
+    }
+    40% {
+      color: #fdcb46;
+      text-shadow: 1.3rem 0 0 rgba(0, 0, 0, 0);
+    }
+    60% {
+      text-shadow: 2.2rem 0 0 #fdcb46;
+    }
+    80%,
+    100% {
+      text-shadow: 1.1rem 0 0 #fdcb46, 2.2rem 0 0 #fdcb46;
+    }
   }
-  40% {
-    color: #fdcb46;
-    text-shadow: 1.3rem 0 0 rgba(0, 0, 0, 0);
-  }
-  60% {
-    text-shadow: 2.2rem 0 0 #fdcb46;
-  }
-  80%,100%{
-    text-shadow: 1.1rem 0 0 #fdcb46, 2.2rem 0 0 #fdcb46;
-  }
-}
 }
 /*effet wizz section footer*/
-@mixin wizz{
+@mixin wizz {
   cursor: pointer;
   animation: effet 80ms ease-in-out;
   animation-iteration-count: 20;
 }
 
 @keyframes effet {
-    0% {
-      transform: translateX(9%);
-      transform: rotate(4deg);
-    }
-    100% {
-      transform: translateX(-9%);
-      transform: rotate(-4deg);
-    }
+  0% {
+    transform: translateX(9%);
+    transform: rotate(4deg);
   }
-  /* souligne les titre au survol de la souris*/
-@mixin souligne{
+  100% {
+    transform: translateX(-9%);
+    transform: rotate(-4deg);
+  }
+}
+/* souligne les titre au survol de la souris*/
+@mixin souligne {
   background-size: 0 100%;
   transition: background-size 0.6s;
   padding: 10px;
-&:hover {
-  background-size: 100% 100%;
+  &:hover {
+    background-size: 100% 100%;
+  }
 }
-    
-}
-
-
-
-
