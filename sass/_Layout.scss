@@ -17,7 +17,7 @@ a {
 footer {
   position: fixed;
   bottom: 0rem;
-  width:100%;
+  width: 100%;
   max-width: 64rem;
   background-color: $background-vert;
   padding: 30px;
@@ -29,15 +29,11 @@ footer {
     }
     a {
       color: $text-oh;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: bolder;
-        &:hover {
-          @include wizz;
-        }
-      @include mobile {
-        font-size: 1rem;
+      &:hover {
+        @include wizz;
       }
-      
     }
   }
 }
