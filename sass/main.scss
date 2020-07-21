@@ -33,6 +33,7 @@ body {
   margin: 2rem;
    a{
     height:100%;
+    /*grossi les diferents menus et éclairci celui-ci au survole de la souris*/
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -48,7 +49,7 @@ body {
     font-size: 2.3rem;
       text-align: center;
         .note-index {
-          margin-top: 6rem;
+          margin-top: 5rem;
           font-size: 4rem;
         
       }
@@ -61,6 +62,7 @@ body {
       font-family: $menu;
       color: $police_couleur1;
       margin-top: 4rem;
+      font-size:2.6rem;
     }
     
   }
@@ -76,10 +78,10 @@ body {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: -webkit-linear-gradient(left, #e4852f, #8e5df9);
-      margin-top:8rem;
+      margin-top:10rem;
     }
     h2 {
-      font-family: "sans serif";
+      font-family: $francaise;
       font-size: 2.6rem;
       color: #c77228;
       margin-top: 4rem;
@@ -103,11 +105,11 @@ body {
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-top:8rem;
+      margin-top:10rem;
       height:3rem;
     }
     h2 {
-      font-family: "sans serif";
+      font-family: $menu;
       font-size: 2.6rem;
       color: #0088f6;
       margin-top:4rem;
@@ -131,11 +133,11 @@ body {
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-top:8rem;
+      margin-top:10rem;
       height: 3rem;
     }
     h2 {
-      font-family: "sans serif";
+      font-family: $menu;
       font-size: 2.6rem;
       color: #6ebe5f;
       margin-top:4rem;
@@ -147,18 +149,20 @@ body {
     justify-content: center;
     h2 {
       border: solid 0 $background-vert;
-      border-radius: 1.3rem;
+      border-radius: 1rem;
       background-color: $background-vert;
       color: $text-oh;
       margin-bottom: 7rem;
       margin-top: 1rem;
-      padding: 1.5rem;
-      width: 20rem;
+      padding: 1.3rem;
+      width: 17rem;
       &:after {
+        margin-left:0.5rem;
         @include effet-proch;
       }
     }
   }
+  /*note musique menu1 ainsi que page1*/
   .fas.fa-music {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -13,18 +13,18 @@
   min-height: 100%;
   margin: 0 auto;
   background-color: white;
-}
-@mixin mobile{
-  @media screen and (min-width: 300px) and (max-width: 600px) and (orientation : portrait){
+  /*petit ecran de type mobile*/
+}@mixin mobile{
+  @media only screen and (max-width: 760px) {
     @content;
   }
 }
-@mixin autres {
-  @media only screen and (min-width : 600px) and (max-width : 1024px){
+/*petit ecran de type tablette*/
+@mixin tablette {
+  @media only screen and (max-width: 1024px) and (orientation : portrait){
     @content;
   }
 }
-
 @mixin flex-column{
   display: flex;
   flex-direction: column;
@@ -34,36 +34,29 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-@mixin center{
-  text-align: center;
-}
-@mixin page-3{
-  background-image: -webkit-linear-gradient(left,#58ab54,#baff88);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* effet point d'exclamation dynamique section menu principal*/
 @mixin effet-proch{
         content: " .";
-        animation: dots 3s infinite;
+        animation: point-suspention 3s infinite;
         
-@keyframes dots {
+@keyframes point-suspention {
   0%, 20% {
     color: rgba(0, 0, 0, 0);
     text-shadow: 2.2rem 0 0 rgba(0, 0, 0, 0);
   }
   40% {
     color: #fdcb46;
-    text-shadow: 1rem 0 0 rgba(0, 0, 0, 0);
+    text-shadow: 1.3rem 0 0 rgba(0, 0, 0, 0);
   }
   60% {
     text-shadow: 2.2rem 0 0 #fdcb46;
   }
   80%,100%{
-    text-shadow: 1rem 0 0 #fdcb46, 2.2rem 0 0 #fdcb46;
+    text-shadow: 1.1rem 0 0 #fdcb46, 2.2rem 0 0 #fdcb46;
   }
 }
 }
+/*effet wizz section footer*/
 @mixin wizz{
   cursor: pointer;
   animation: effet 80ms ease-in-out;
@@ -80,8 +73,8 @@
       transform: rotate(-4deg);
     }
   }
+  /* souligne les titre au survol de la souris*/
 @mixin souligne{
-  
   background-size: 0 100%;
   transition: background-size 0.6s;
   padding: 10px;
