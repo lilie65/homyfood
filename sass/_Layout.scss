@@ -17,34 +17,27 @@ a {
 footer {
   position: fixed;
   bottom: 0rem;
-  width: 64rem;
+  width:100%;
+  max-width: 64rem;
   background-color: $background-vert;
   padding: 30px;
   &.footer {
     display: flex;
     justify-content: space-between;
-  a {
-    color: $text-oh;
-    font-size: 1.5rem;
-    &:hover {
-      &:hover {
-        @include wizz;
+    @include mobile {
+      font-size: 1rem;
+    }
+    a {
+      color: $text-oh;
+      font-size: 1.5rem;
+      font-weight: bolder;
+        &:hover {
+          @include wizz;
         }
+      @include mobile {
+        font-size: 1rem;
       }
-    @include mobile {
-      font-size: 1rem;
-    }
-    @include autres {
-      font-size: 1rem;
-    }
-    }
-    @include mobile {
-      width: 100%;
-      font-size: 1rem;
-    }
-    @include autres {
-      width: 100%;
-      font-size: 1rem;
+      
     }
   }
 }
