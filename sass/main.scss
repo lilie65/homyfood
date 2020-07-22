@@ -26,7 +26,7 @@ body {
 .menus {
   display: block;
   border: groove 0px;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   box-shadow: 0rem 0rem 1rem $border-menu;
   width: 19rem;
   height: 25rem;
@@ -58,7 +58,7 @@ body {
       margin-top: 1rem;
     }
     h2 {
-      font-family: $menu;
+      font-family: Arial, Helvetica, sans-serif;
       color: $police_couleur1;
       margin-top: 2rem;
       font-size: 2.6rem;
@@ -106,7 +106,7 @@ body {
       margin-top: 10rem;
     }
     h2 {
-      font-family: $menu;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 2.6rem;
       color: #0088f6;
       margin-top: 2rem;
@@ -133,7 +133,7 @@ body {
       margin-top: 10rem;
     }
     h2 {
-      font-family: $menu;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 2.6rem;
       color: #6ebe5f;
       margin-top: 2rem;

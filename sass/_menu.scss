@@ -7,7 +7,7 @@
   font-size: 1rem;
   white-space: pre-line;
   @include mobile {
-    font-size: 1 rem;
+    font-size: 1rem;
   }
   h1 {
     position: absolute;
@@ -18,7 +18,7 @@
     @include mobile {
       top: 3rem;
     }
-    @include tablette {
+    @include fablette {
       top: 2.5rem;
     }
   }
@@ -28,7 +28,7 @@
     margin: 7rem;
     height: 100%;
     margin-bottom: 8rem;
-    @include tablette {
+    @include fablette {
       margin: 5rem;
       margin-bottom: 9rem;
     }
@@ -41,7 +41,6 @@
       height: 100%;
     }
     h2 {
-      font-display: block;
       text-align: center;
       font-size: 2rem;
       margin: 1rem;
@@ -57,7 +56,7 @@
         padding: 0.5rem 0rem;
         text-align: center;
       }
-      @include tablette {
+      @include fablette {
         padding: 0.5rem 1rem;
         text-align: center;
       }
@@ -67,9 +66,8 @@
         content: "";
         background-repeat: no-repeat;
         background-size: contain;
-        background-origin: 0 0;
         background-position: center center;
-        width: 31%;
+        width: 30%;
       }
     }
     .carte {
@@ -79,9 +77,8 @@
       width: 100%;
       padding: 0 10%;
       .plat {
-        @include mobile {
-          width: 80%;
-        }
+        width: 85%;
+        
       }
       .prix {
         font-size: large;
@@ -96,6 +93,7 @@
         margin-left: 2%;
       }
     }
+    /*page la note enchanté*/
     &.page1 {
       background-color: $couleur-page1;
       color: $police_couleur1;
@@ -119,19 +117,19 @@
           background: linear-gradient(
               to top,
               $police_couleur1 0%,
-              $police_couleur1 4px,
-              transparent 5px
+              $police_couleur1 0.3rem,
+              transparent 0.4rem
             )
             no-repeat;
           @include souligne;
         }
         &:before {
           background-image: url(../img/image1-1.png);
-          width: 36%;
+          width: 35%;
         }
         &:after {
           background-image: url(../img/image1-1.png);
-          width: 36%;
+          width: 35%;
         }
       }
       .note {
@@ -149,6 +147,7 @@
         }
       }
     }
+    /*page le chic à la française*/
     &.page2 {
       background-color: $couleur-page2;
       h2 {
@@ -235,6 +234,7 @@
         }
       }
     }
+    /*page le délice des papilles*/
     &.page3 {
       background-color: $couleur-page3;
       h2 {
@@ -316,6 +316,7 @@
         }
       }
     }
+    /*page la palette du gout*/
     &.page4 {
       background-color: $couleur-page4;
       h2 {
@@ -334,7 +335,6 @@
         -webkit-text-fill-color: transparent;
         padding: 2rem;
         @include mobile {
-          height: 3rem;
           font-size: 2.3rem;
           padding: 0.5rem;
         }
