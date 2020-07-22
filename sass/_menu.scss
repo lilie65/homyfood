@@ -9,32 +9,23 @@
   @include mobile {
     font-size: 1rem;
   }
-  h1 {
+  .titre{
+  h2{
     position: absolute;
     text-align: center;
-    top: 3.5rem;
     width: 100%;
     font-size: 1.5rem;
-    @include mobile {
-      top: 3rem;
-    }
-    @include fablette {
-      top: 2.5rem;
-    }
   }
+}
   .pages {
     border: groove 0px;
     box-shadow: 0rem 0rem 1rem $border-menu;
-    margin: 7rem;
+    margin: 4rem;
     height: 100%;
     margin-bottom: 8rem;
-    @include fablette {
-      margin: 5rem;
-      margin-bottom: 9rem;
-    }
     @include mobile {
       margin: 0rem;
-      margin-top: 8rem;
+      margin-top:4rem;
       margin-bottom: 8rem;
       padding: 1rem;
       width: 100%;
