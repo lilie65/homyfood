@@ -34,7 +34,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-/* effet point d'exclamation dynamique section menu principal*/
+/* effet point de suspention dynamique section menu principal*/
 @mixin effet-proch {
   content: " .";
   animation: point-suspention 3s infinite;
@@ -61,11 +61,11 @@
 /*effet wizz section footer*/
 @mixin wizz {
   cursor: pointer;
-  animation: effet 80ms ease-in-out;
+  animation: wizz 80ms ease-in-out;
   animation-iteration-count: 20;
 }
 
-@keyframes effet {
+@keyframes wizz {
   0% {
     transform: translateX(9%);
     transform: rotate(4deg);
