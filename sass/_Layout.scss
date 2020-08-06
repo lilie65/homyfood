@@ -27,8 +27,11 @@ footer {
   &.footer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     @include mobile {
       font-size: 1rem;
+      padding:18px;
+     
     }
     @include fablette{
       font-size: 1rem;
