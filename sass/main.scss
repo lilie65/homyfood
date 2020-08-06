@@ -36,7 +36,7 @@ body {
     /*grossi les diferents menus et éclairci celui-ci au survole de la souris*/
     &:hover {
       cursor: pointer;
-      transform: scale(1.1);
+      transform: scale(1.03);
       transition: transform 430ms ease-in-out;
       opacity: 70%;
     }
